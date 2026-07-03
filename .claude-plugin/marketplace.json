@@ -1,0 +1,36 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "stackdrop",
+  "owner": {
+    "name": "Ezzat",
+    "email": "ah.ezzat.muh@gmail.com"
+  },
+  "metadata": {
+    "description": "Stackdrop internal marketplace. Install 'stack-pill' to set up the team's base skills/plugins."
+  },
+  "plugins": [
+    {
+      "name": "stack-pill",
+      "source": "./",
+      "version": "1.2.0",
+      "description": "Base setup pill: one command installs Impeccable + Superpowers (deps), Graphify, the mattpocock skills, Context7, Playwright, skill-creator, chrome-devtools-mcp, CodeRabbit, and ponytail, and injects a usage guide for all of them."
+    },
+    {
+      "name": "superpowers",
+      "source": {
+        "source": "github",
+        "repo": "obra/superpowers"
+      },
+      "description": "Core skills library for Claude Code: TDD, debugging, collaboration patterns, and proven techniques."
+    },
+    {
+      "name": "impeccable",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/pbakaus/impeccable",
+        "path": "plugin"
+      },
+      "description": "Design fluency for frontend development: the impeccable skill, manual-edit agent, and design-detector hook."
+    }
+  ]
+}

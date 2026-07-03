@@ -1,0 +1,11 @@
+{
+  "name": "stack-pill",
+  "description": "A pill for the Stackdrop team to easily setup the base needed skills and plugins for all projects. One command installs Impeccable, Superpowers, Graphify, the mattpocock skills, Context7, Playwright, skill-creator, chrome-devtools-mcp, CodeRabbit, and ponytail — plus a built-in guide that teaches Claude how and when to use them.",
+  "version": "1.2.0",
+  "author": {
+    "name": "Ezzat",
+    "email": "ahmed.ezzat@stackdrop.co"
+  },
+  "keywords": ["stackdrop", "meta", "bundle", "impeccable", "superpowers", "graphify", "matt-pocock", "skills", "guide", "playwright", "coderabbit", "chrome-devtools", "skill-creator", "ponytail", "context7"],
+  "dependencies": ["superpowers", "impeccable"]
+}

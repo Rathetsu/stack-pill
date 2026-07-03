@@ -1,0 +1,45 @@
+{
+  "description": "stack-pill: bootstrap Graphify + mattpocock skills + Context7, inject the toolkit usage guide, and add a per-project graph nudge on session start.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/install-graphify.sh\"",
+            "timeout": 60,
+            "statusMessage": "Ensuring Graphify is installed"
+          },
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/install-matt-skills.sh\"",
+            "timeout": 60,
+            "statusMessage": "Ensuring mattpocock skills are installed"
+          },
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/install-ctx7.sh\"",
+            "timeout": 60,
+            "statusMessage": "Ensuring Context7 is set up"
+          },
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/usage-guide.sh\"",
+            "timeout": 15
+          }
+        ]
+      },
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/graphify-project-setup.sh\"",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}
