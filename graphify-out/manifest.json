@@ -1,0 +1,67 @@
+{
+  ".claude-plugin/marketplace.json": {
+    "mtime": 1782804595.064539,
+    "ast_hash": "4023c84cf9c2680ebd13602413517052",
+    "semantic_hash": ""
+  },
+  ".claude-plugin/plugin.json": {
+    "mtime": 1782804587.1431696,
+    "ast_hash": "83a547a65c0f224001b113d0465adf3c",
+    "semantic_hash": ""
+  },
+  ".impeccable/hook.cache.json": {
+    "mtime": 1783245078.7647483,
+    "ast_hash": "afff01f34c72a33048cbd5579165d047",
+    "semantic_hash": ""
+  },
+  ".vscode/settings.json": {
+    "mtime": 1783062946.9707043,
+    "ast_hash": "e94f8d8ef8c818ebeed6fe07808f4d1c",
+    "semantic_hash": ""
+  },
+  "hooks/hooks.json": {
+    "mtime": 1782804530.3903778,
+    "ast_hash": "7c12cd26bd9a3b4bf8234937a3b2c3a5",
+    "semantic_hash": ""
+  },
+  "install.sh": {
+    "mtime": 1782808293.5655713,
+    "ast_hash": "fa7d3754064c000ae8a220345412b47b",
+    "semantic_hash": ""
+  },
+  "scripts/graphify-project-setup.sh": {
+    "mtime": 1782726178.6875875,
+    "ast_hash": "1a16c883a7711d969266f5691644643e",
+    "semantic_hash": ""
+  },
+  "scripts/install-ctx7.sh": {
+    "mtime": 1782804464.1936297,
+    "ast_hash": "65041b3f8d77de59b9009dc7255c9b58",
+    "semantic_hash": ""
+  },
+  "scripts/install-graphify.sh": {
+    "mtime": 1782726370.8814452,
+    "ast_hash": "b1dbd6c4f79fe9f9b933115b73530b1d",
+    "semantic_hash": ""
+  },
+  "scripts/install-matt-skills.sh": {
+    "mtime": 1782801819.3465643,
+    "ast_hash": "d78a3ead32bb3d25f3a206aed68b6b32",
+    "semantic_hash": ""
+  },
+  "scripts/usage-guide.sh": {
+    "mtime": 1782801881.47486,
+    "ast_hash": "f7c1ad0e9a984b49f2083721d1c26890",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1783245234.849601,
+    "ast_hash": "80573d16393f50a573959d14f90fcb64",
+    "semantic_hash": ""
+  },
+  "instructions/skills-guide.md": {
+    "mtime": 1782804565.3089297,
+    "ast_hash": "1c840310807442a87822cb00d2656271",
+    "semantic_hash": ""
+  }
+}
