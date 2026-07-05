@@ -21,7 +21,14 @@ start with.
 ## Install
 
 ```bash
-claude plugin marketplace add StackdropCO/stack-pill \
+claude plugin marketplace add https://github.com/StackdropCO/stack-pill.git \
   && claude plugin install stack-pill@stackdrop \
   && bash "$(ls -dt "$HOME"/.claude/plugins/cache/stackdrop/stack-pill/*/install.sh | head -1)" --extras-only
 ```
+
+> **Windows:** run this in **Git Bash** or **WSL**, not PowerShell.
+
+> **Troubleshooting:** if the marketplace step fails to clone, make sure you
+> have read access to the repo. For a private repo over HTTPS you'll need a
+> configured GitHub credential (e.g. a token via `gh auth login` or the git
+> credential manager).
