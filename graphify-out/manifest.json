@@ -5,12 +5,12 @@
     "semantic_hash": ""
   },
   ".claude-plugin/plugin.json": {
-    "mtime": 1782804587.1431696,
-    "ast_hash": "83a547a65c0f224001b113d0465adf3c",
+    "mtime": 1783329760.5318582,
+    "ast_hash": "32b9c188f264800580bf1709231d90ce",
     "semantic_hash": ""
   },
   ".impeccable/hook.cache.json": {
-    "mtime": 1783245078.7647483,
+    "mtime": 1783329781.7859023,
     "ast_hash": "afff01f34c72a33048cbd5579165d047",
     "semantic_hash": ""
   },
@@ -25,8 +25,8 @@
     "semantic_hash": ""
   },
   "install.sh": {
-    "mtime": 1782808293.5655713,
-    "ast_hash": "fa7d3754064c000ae8a220345412b47b",
+    "mtime": 1783329781.7093532,
+    "ast_hash": "e729390a33e761bbdda291391b7387f5",
     "semantic_hash": ""
   },
   "scripts/graphify-project-setup.sh": {
@@ -55,8 +55,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1783245234.849601,
-    "ast_hash": "80573d16393f50a573959d14f90fcb64",
+    "mtime": 1783248057.7808459,
+    "ast_hash": "c10112aa7c5e98ef516246d01513673b",
     "semantic_hash": ""
   },
   "instructions/skills-guide.md": {
