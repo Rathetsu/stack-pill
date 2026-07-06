@@ -21,7 +21,7 @@ start with.
 ## Install
 
 ```bash
-claude plugin marketplace add https://github.com/StackdropCO/stack-pill.git \
+claude plugin marketplace add https://github.com/Rathetsu/stack-pill.git \
   && claude plugin install stack-pill@stackdrop \
   && bash "$(ls -dt "$HOME"/.claude/plugins/cache/stackdrop/stack-pill/*/install.sh | head -1)" --extras-only
 ```

@@ -4,16 +4,17 @@
 #
 # One command installs the whole bundle:
 #   1. registers the `stackdrop` marketplace
-#   2. installs the `stack-pill` plugin (which auto-installs Superpowers + Impeccable)
-#   3. installs the official + third-party plugins by name from their own
-#      marketplaces (Playwright, skill-creator, chrome-devtools-mcp, CodeRabbit,
-#      and ponytail) -- idempotent and non-fatal, so re-runs are safe.
+#   2. installs the `stack-pill` plugin
+#   3. installs the bundled plugins by name from their own marketplaces:
+#      Superpowers + Impeccable (from `stackdrop`), plus Playwright, skill-creator,
+#      chrome-devtools-mcp, CodeRabbit, and ponytail -- idempotent and non-fatal,
+#      so re-runs are safe.
 #   4. bootstraps the non-plugin tools in the foreground (so they're ready when
 #      this script returns): Graphify, the mattpocock skills, and Context7.
 #
 # Usage:
 #   bash install.sh                      # from the cloned repo (uses ./ as the marketplace)
-#   bash install.sh StackdropCO/stack-pill # from a GitHub marketplace
+#   bash install.sh Rathetsu/stack-pill  # from a GitHub marketplace
 #   bash install.sh /path/to/stack-pill  # from a local path
 #   bash install.sh --extras-only        # skip marketplace+stack-pill; run only steps 3-4
 #                                        # (the README one-liner uses this after installing stack-pill)
@@ -79,12 +80,17 @@ if [ "$EXTRAS_ONLY" -eq 0 ]; then
   echo "==> Adding marketplace: $MARKET_SRC"
   claude plugin marketplace add "$MARKET_SRC"
 
-  echo "==> Installing stack-pill (pulls Superpowers + Impeccable)"
+  echo "==> Installing stack-pill"
   claude plugin install stack-pill@stackdrop
 fi
 
 # --- 3. Bundled plugins (by name, from their own marketplaces) --------------
 echo "==> Installing bundled plugins"
+# Superpowers + Impeccable ship from the stackdrop marketplace (see marketplace.json).
+# We install them explicitly (no longer via plugin.json "dependencies").
+ensure_market Rathetsu/stack-pill stackdrop
+ensure_plugin superpowers@stackdrop
+ensure_plugin impeccable@stackdrop
 ensure_market anthropics/claude-plugins-official claude-plugins-official
 for p in playwright skill-creator chrome-devtools-mcp coderabbit; do
   ensure_plugin "$p@claude-plugins-official"

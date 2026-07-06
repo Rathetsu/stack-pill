@@ -6,6 +6,5 @@
     "name": "Ezzat",
     "email": "ahmed.ezzat@stackdrop.co"
   },
-  "keywords": ["stackdrop", "meta", "bundle", "impeccable", "superpowers", "graphify", "matt-pocock", "skills", "guide", "playwright", "coderabbit", "chrome-devtools", "skill-creator", "ponytail", "context7"],
-  "dependencies": ["superpowers", "impeccable"]
+  "keywords": ["stackdrop", "meta", "bundle", "impeccable", "superpowers", "graphify", "matt-pocock", "skills", "guide", "playwright", "coderabbit", "chrome-devtools", "skill-creator", "ponytail", "context7"]
 }
