@@ -12,7 +12,7 @@
     {
       "name": "stack-pill",
       "source": "./",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "description": "Base setup pill: one command installs Impeccable, Superpowers, Graphify, the mattpocock skills, Context7, Playwright, skill-creator, chrome-devtools-mcp, CodeRabbit, and ponytail, and injects a usage guide for all of them."
     },
     {

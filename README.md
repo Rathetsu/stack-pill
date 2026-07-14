@@ -55,3 +55,20 @@ clone path: a local path pins updates to that directory and disables
 auto-update.
 
 </details>
+
+## Adding a team skill
+
+Custom skills live in this repo under `skills/`. To add one and ship it to the
+whole team:
+
+```bash
+git clone https://github.com/Rathetsu/stack-pill && cd stack-pill
+# then, in Claude Code:
+/stack-pill:add-skill my-skill "what it does and when to use it"
+```
+
+The command scaffolds `skills/my-skill/SKILL.md`, bumps the version, updates the
+usage guide, and commits + pushes. Teammates receive it automatically at their
+next session start (the auto-update hook, ~once a day) after a restart. For
+deeper skill authoring/evaluation, use the bundled `skill-creator`; `add-skill`
+handles packaging and release.
