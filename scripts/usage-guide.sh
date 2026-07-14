@@ -19,7 +19,7 @@
 
 set -u
 
-DATA_DIR="${CLAUDE_PLUGIN_DATA:-$HOME/.claude/plugins/data/stack-pill}"
+DATA_DIR="${CLAUDE_PLUGIN_DATA:-${CLAUDE_CONFIG_DIR:-$HOME/.claude}/plugins/data/stack-pill}"
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" && pwd)"
 GUIDE="$HERE/../instructions/skills-guide.md"
 

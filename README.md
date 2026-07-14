@@ -20,15 +20,38 @@ start with.
 
 ## Install
 
+One command:
+
 ```bash
-claude plugin marketplace add https://github.com/Rathetsu/stack-pill.git \
-  && claude plugin install stack-pill@stackdrop \
-  && bash "$(ls -dt "$HOME"/.claude/plugins/cache/stackdrop/stack-pill/*/install.sh | head -1)" --extras-only
+curl -fsSL https://raw.githubusercontent.com/Rathetsu/stack-pill/master/install.sh | bash -s -- Rathetsu/stack-pill
 ```
+
+This registers the `stackdrop` marketplace, installs `stack-pill`, then installs
+the bundled plugins and bootstraps the CLI tools. It is idempotent, so re-running
+it is safe. Restart Claude Code when it finishes.
 
 > **Windows:** run this in **Git Bash** or **WSL**, not PowerShell.
 
-> **Troubleshooting:** if the marketplace step fails to clone, make sure you
-> have read access to the repo. For a private repo over HTTPS you'll need a
-> configured GitHub credential (e.g. a token via `gh auth login` or the git
-> credential manager).
+**Already installed?** To pull the newest version now:
+
+```bash
+claude plugin marketplace update stackdrop && claude plugin update stack-pill@stackdrop
+```
+
+Then restart Claude Code. (Once you're on a version with the auto-update hook,
+this happens on its own, about once a day at session start.)
+
+<details>
+<summary>Prefer to run the steps yourself?</summary>
+
+```bash
+claude plugin marketplace add Rathetsu/stack-pill
+claude plugin install stack-pill@stackdrop
+bash "$(ls -dt "$HOME"/.claude/plugins/cache/stackdrop/stack-pill/*/install.sh | head -1)" --extras-only
+```
+
+Add the marketplace by its GitHub slug (`Rathetsu/stack-pill`), not a local
+clone path: a local path pins updates to that directory and disables
+auto-update.
+
+</details>

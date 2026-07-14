@@ -40,7 +40,7 @@ case "${1:-}" in --wait | -w) WAIT=1 ;; esac
 [ "${STACK_PILL_MATT_SKILLS_WAIT:-0}" = "1" ] && WAIT=1
 
 # --- Resolve a persistent data dir (survives plugin updates) ----------------
-DATA_DIR="${CLAUDE_PLUGIN_DATA:-$HOME/.claude/plugins/data/stack-pill}"
+DATA_DIR="${CLAUDE_PLUGIN_DATA:-${CLAUDE_CONFIG_DIR:-$HOME/.claude}/plugins/data/stack-pill}"
 mkdir -p "$DATA_DIR" 2>/dev/null || true
 
 SENTINEL="$DATA_DIR/matt-skills-installed"
@@ -48,8 +48,8 @@ SKIP_FILE="$DATA_DIR/matt-skills-skip"
 LOCK="$DATA_DIR/matt-skills-install.lock"
 LOG="$DATA_DIR/matt-skills-install.log"
 # Global skills lock file written by the `skills` CLI; our success signal.
-SKILL_LOCK="${XDG_STATE_HOME:-$HOME/.agents}/.skill-lock.json"
-[ -f "$HOME/.agents/.skill-lock.json" ] && SKILL_LOCK="$HOME/.agents/.skill-lock.json"
+# The CLI writes to ~/.agents/.skill-lock.json (not an XDG path).
+SKILL_LOCK="$HOME/.agents/.skill-lock.json"
 # Export so the detached `setsid bash -c` worker (a fresh shell) inherits them.
 export DATA_DIR SENTINEL SKIP_FILE LOCK LOG SKILL_LOCK
 

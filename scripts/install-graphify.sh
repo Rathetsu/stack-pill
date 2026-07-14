@@ -34,7 +34,7 @@ case "${1:-}" in --wait | -w) WAIT=1 ;; esac
 [ "${STACK_PILL_GRAPHIFY_WAIT:-0}" = "1" ] && WAIT=1
 
 # --- Resolve a persistent data dir (survives plugin updates) ----------------
-DATA_DIR="${CLAUDE_PLUGIN_DATA:-$HOME/.claude/plugins/data/stack-pill}"
+DATA_DIR="${CLAUDE_PLUGIN_DATA:-${CLAUDE_CONFIG_DIR:-$HOME/.claude}/plugins/data/stack-pill}"
 mkdir -p "$DATA_DIR" 2>/dev/null || true
 
 SENTINEL="$DATA_DIR/graphify-installed"
