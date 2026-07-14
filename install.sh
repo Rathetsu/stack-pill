@@ -42,8 +42,10 @@ fi
 # --- Idempotent, non-fatal helpers ------------------------------------------
 # claude CLI idempotency/exit codes are undocumented, so we check first and
 # never let a single failure abort the rest of the install.
-have_market() { claude plugin marketplace list 2>/dev/null | grep -q "$1"; }
-have_plugin() { claude plugin list 2>/dev/null | grep -q "$1"; }
+# Match structured JSON output so a name that is a substring of another can't
+# produce a false positive.
+have_market() { claude plugin marketplace list --json 2>/dev/null | grep -q "\"name\": \"$1\""; }
+have_plugin() { claude plugin list --json 2>/dev/null | grep -q "\"id\": \"$1\""; }
 
 ensure_market() { # <add-arg> <name>
   if have_market "$2"; then
@@ -64,8 +66,9 @@ ensure_plugin() { # <name@marketplace>
 }
 
 bootstrap() { # <script-name> <label>
-  local script
-  script="$(ls -dt "$HOME"/.claude/plugins/cache/stackdrop/stack-pill/*/scripts/"$1" 2>/dev/null | head -1 || true)"
+  local script cfg
+  cfg="${CLAUDE_CONFIG_DIR:-$HOME/.claude}"
+  script="$(ls -dt "$cfg"/plugins/cache/stackdrop/stack-pill/*/scripts/"$1" 2>/dev/null | head -1 || true)"
   # Prefer the cached copy; fall back to this repo's own scripts dir.
   [ -z "${script:-}" ] && [ -f "$SELF_DIR/scripts/$1" ] && script="$SELF_DIR/scripts/$1"
   if [ -n "${script:-}" ] && [ -f "$script" ]; then
@@ -77,11 +80,21 @@ bootstrap() { # <script-name> <label>
 
 # --- 1-2. Marketplace + stack-pill (skipped in --extras-only) ---------------
 if [ "$EXTRAS_ONLY" -eq 0 ]; then
+  # A local-path marketplace source pins updates to that directory forever, so
+  # `marketplace update` will never pull from GitHub -- auto-update is dead for
+  # this user. A github slug (owner/repo) or URL is not a real path, so `-e`
+  # cleanly distinguishes them. Steer clone installs toward the GitHub slug.
+  if [ -e "$MARKET_SRC" ]; then
+    echo "warning: installing from a local path ($MARKET_SRC)." >&2
+    echo "         Auto-update won't work -- the marketplace will be pinned to this directory." >&2
+    echo "         For a self-updating install, use: bash install.sh Rathetsu/stack-pill" >&2
+  fi
+
   echo "==> Adding marketplace: $MARKET_SRC"
-  claude plugin marketplace add "$MARKET_SRC"
+  have_market stackdrop || claude plugin marketplace add "$MARKET_SRC"
 
   echo "==> Installing stack-pill"
-  claude plugin install stack-pill@stackdrop
+  have_plugin stack-pill@stackdrop || claude plugin install stack-pill@stackdrop
 fi
 
 # --- 3. Bundled plugins (by name, from their own marketplaces) --------------

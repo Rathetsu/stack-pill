@@ -1,0 +1,6 @@
+# Graphify's post-commit hook rebuilds this after every commit; tracking it
+# leaves the tree permanently dirty and ships dev-machine graph cache to teammates.
+graphify-out/
+
+# Impeccable tooling cache
+.impeccable/
