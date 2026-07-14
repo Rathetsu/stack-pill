@@ -94,6 +94,136 @@
       "norm_label": "plugins"
     },
     {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme",
+      "community": 0,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "stack-pill",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme_stack_pill",
+      "community": 0,
+      "norm_label": "stack-pill"
+    },
+    {
+      "label": "What's installed",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "readme_what_s_installed",
+      "community": 0,
+      "norm_label": "what's installed"
+    },
+    {
+      "label": "Install",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "readme_install",
+      "community": 0,
+      "norm_label": "install"
+    },
+    {
+      "label": "Adding a team skill",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "readme_adding_a_team_skill",
+      "community": 0,
+      "norm_label": "adding a team skill"
+    },
+    {
+      "label": "add-skill.md",
+      "file_type": "document",
+      "source_file": "commands/add-skill.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "commands_add_skill",
+      "community": 9,
+      "norm_label": "add-skill.md"
+    },
+    {
+      "label": "1. Confirm you're in the stack-pill checkout",
+      "file_type": "document",
+      "source_file": "commands/add-skill.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "commands_add_skill_1_confirm_you_re_in_the_stack_pill_checkout",
+      "community": 9,
+      "norm_label": "1. confirm you're in the stack-pill checkout"
+    },
+    {
+      "label": "2. Work out the skill's name and description",
+      "file_type": "document",
+      "source_file": "commands/add-skill.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "commands_add_skill_2_work_out_the_skill_s_name_and_description",
+      "community": 9,
+      "norm_label": "2. work out the skill's name and description"
+    },
+    {
+      "label": "3. Create `skills/<name>/SKILL.md`",
+      "file_type": "document",
+      "source_file": "commands/add-skill.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "commands_add_skill_3_create_skills_name_skill_md",
+      "community": 9,
+      "norm_label": "3. create `skills/<name>/skill.md`"
+    },
+    {
+      "label": "4. Bump the version in lockstep",
+      "file_type": "document",
+      "source_file": "commands/add-skill.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "commands_add_skill_4_bump_the_version_in_lockstep",
+      "community": 9,
+      "norm_label": "4. bump the version in lockstep"
+    },
+    {
+      "label": "5. Add it to the usage guide",
+      "file_type": "document",
+      "source_file": "commands/add-skill.md",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "commands_add_skill_5_add_it_to_the_usage_guide",
+      "community": 9,
+      "norm_label": "5. add it to the usage guide"
+    },
+    {
+      "label": "6. Validate",
+      "file_type": "document",
+      "source_file": "commands/add-skill.md",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "commands_add_skill_6_validate",
+      "community": 9,
+      "norm_label": "6. validate"
+    },
+    {
+      "label": "7. Show, commit, push",
+      "file_type": "document",
+      "source_file": "commands/add-skill.md",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "commands_add_skill_7_show_commit_push",
+      "community": 9,
+      "norm_label": "7. show, commit, push"
+    },
+    {
       "label": "install.sh",
       "file_type": "code",
       "source_file": "install.sh",
@@ -125,7 +255,7 @@
       "label": "have_market()",
       "file_type": "code",
       "source_file": "install.sh",
-      "source_location": "L45",
+      "source_location": "L47",
       "metadata": {
         "language": "bash",
         "kind": "bash_function"
@@ -139,7 +269,7 @@
       "label": "have_plugin()",
       "file_type": "code",
       "source_file": "install.sh",
-      "source_location": "L46",
+      "source_location": "L48",
       "metadata": {
         "language": "bash",
         "kind": "bash_function"
@@ -153,7 +283,7 @@
       "label": "ensure_market()",
       "file_type": "code",
       "source_file": "install.sh",
-      "source_location": "L48",
+      "source_location": "L50",
       "metadata": {
         "language": "bash",
         "kind": "bash_function"
@@ -167,7 +297,7 @@
       "label": "ensure_plugin()",
       "file_type": "code",
       "source_file": "install.sh",
-      "source_location": "L57",
+      "source_location": "L59",
       "metadata": {
         "language": "bash",
         "kind": "bash_function"
@@ -181,7 +311,7 @@
       "label": "bootstrap()",
       "file_type": "code",
       "source_file": "install.sh",
-      "source_location": "L66",
+      "source_location": "L68",
       "metadata": {
         "language": "bash",
         "kind": "bash_function"
@@ -346,6 +476,48 @@
       "norm_label": "run_install()"
     },
     {
+      "label": "update-stack-pill.sh",
+      "file_type": "code",
+      "source_file": "scripts/update-stack-pill.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "scripts_update_stack_pill",
+      "community": 10,
+      "norm_label": "update-stack-pill.sh"
+    },
+    {
+      "label": "update-stack-pill.sh script",
+      "file_type": "code",
+      "source_file": "scripts/update-stack-pill.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "scripts_update_stack_pill_sh__entry",
+      "community": 10,
+      "norm_label": "update-stack-pill.sh script"
+    },
+    {
+      "label": "run_update()",
+      "file_type": "code",
+      "source_file": "scripts/update-stack-pill.sh",
+      "source_location": "L82",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast",
+      "id": "scripts_update_stack_pill_run_update",
+      "community": 10,
+      "norm_label": "run_update()"
+    },
+    {
       "label": "usage-guide.sh",
       "file_type": "code",
       "source_file": "scripts/usage-guide.sh",
@@ -374,54 +546,14 @@
       "norm_label": "usage-guide.sh script"
     },
     {
-      "label": "README.md",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "readme",
-      "community": 0,
-      "norm_label": "readme.md"
-    },
-    {
-      "label": "stack-pill",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "readme_stack_pill",
-      "community": 0,
-      "norm_label": "stack-pill"
-    },
-    {
-      "label": "What's installed",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "readme_what_s_installed",
-      "community": 0,
-      "norm_label": "what's installed"
-    },
-    {
-      "label": "Install",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L21",
-      "_origin": "ast",
-      "id": "readme_install",
-      "community": 0,
-      "norm_label": "install"
-    },
-    {
       "label": "skills-guide.md",
       "file_type": "document",
       "source_file": "instructions/skills-guide.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "instructions_skills_guide",
       "community": 3,
-      "norm_label": "skills-guide.md"
+      "norm_label": "skills-guide.md",
+      "id": "instructions_skills_guide"
     },
     {
       "label": "Stackdrop toolkit \u2014 when to reach for what",
@@ -429,9 +561,9 @@
       "source_file": "instructions/skills-guide.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "instructions_skills_guide_stackdrop_toolkit_when_to_reach_for_what",
       "community": 3,
-      "norm_label": "stackdrop toolkit \u2014 when to reach for what"
+      "norm_label": "stackdrop toolkit \u2014 when to reach for what",
+      "id": "instructions_skills_guide_stackdrop_toolkit_when_to_reach_for_what"
     },
     {
       "label": "Superpowers \u2014 the default development methodology",
@@ -439,9 +571,9 @@
       "source_file": "instructions/skills-guide.md",
       "source_location": "L14",
       "_origin": "ast",
-      "id": "instructions_skills_guide_superpowers_the_default_development_methodology",
       "community": 3,
-      "norm_label": "superpowers \u2014 the default development methodology"
+      "norm_label": "superpowers \u2014 the default development methodology",
+      "id": "instructions_skills_guide_superpowers_the_default_development_methodology"
     },
     {
       "label": "Impeccable \u2014 frontend design & UX (`/impeccable <command>`)",
@@ -449,9 +581,9 @@
       "source_file": "instructions/skills-guide.md",
       "source_location": "L22",
       "_origin": "ast",
-      "id": "instructions_skills_guide_impeccable_frontend_design_ux_impeccable_command",
       "community": 3,
-      "norm_label": "impeccable \u2014 frontend design & ux (`/impeccable <command>`)"
+      "norm_label": "impeccable \u2014 frontend design & ux (`/impeccable <command>`)",
+      "id": "instructions_skills_guide_impeccable_frontend_design_ux_impeccable_command"
     },
     {
       "label": "Graphify \u2014 codebase/docs \u2192 queryable knowledge graph",
@@ -459,9 +591,9 @@
       "source_file": "instructions/skills-guide.md",
       "source_location": "L31",
       "_origin": "ast",
-      "id": "instructions_skills_guide_graphify_codebase_docs_queryable_knowledge_graph",
       "community": 3,
-      "norm_label": "graphify \u2014 codebase/docs \u2192 queryable knowledge graph"
+      "norm_label": "graphify \u2014 codebase/docs \u2192 queryable knowledge graph",
+      "id": "instructions_skills_guide_graphify_codebase_docs_queryable_knowledge_graph"
     },
     {
       "label": "mattpocock skills \u2014 complementary workflows",
@@ -469,9 +601,9 @@
       "source_file": "instructions/skills-guide.md",
       "source_location": "L36",
       "_origin": "ast",
-      "id": "instructions_skills_guide_mattpocock_skills_complementary_workflows",
       "community": 3,
-      "norm_label": "mattpocock skills \u2014 complementary workflows"
+      "norm_label": "mattpocock skills \u2014 complementary workflows",
+      "id": "instructions_skills_guide_mattpocock_skills_complementary_workflows"
     },
     {
       "label": "More installed tools",
@@ -479,9 +611,9 @@
       "source_file": "instructions/skills-guide.md",
       "source_location": "L43",
       "_origin": "ast",
-      "id": "instructions_skills_guide_more_installed_tools",
       "community": 3,
-      "norm_label": "more installed tools"
+      "norm_label": "more installed tools",
+      "id": "instructions_skills_guide_more_installed_tools"
     },
     {
       "label": "Overlaps \u2014 which to prefer",
@@ -489,9 +621,9 @@
       "source_file": "instructions/skills-guide.md",
       "source_location": "L49",
       "_origin": "ast",
-      "id": "instructions_skills_guide_overlaps_which_to_prefer",
       "community": 3,
-      "norm_label": "overlaps \u2014 which to prefer"
+      "norm_label": "overlaps \u2014 which to prefer",
+      "id": "instructions_skills_guide_overlaps_which_to_prefer"
     }
   ],
   "links": [
@@ -576,10 +708,120 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_stack_pill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "readme_stack_pill",
+      "target": "readme_adding_a_team_skill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "readme_stack_pill",
+      "target": "readme_install",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "readme_stack_pill",
+      "target": "readme_what_s_installed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "commands/add-skill.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "commands_add_skill",
+      "target": "commands_add_skill_1_confirm_you_re_in_the_stack_pill_checkout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "commands/add-skill.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "commands_add_skill",
+      "target": "commands_add_skill_2_work_out_the_skill_s_name_and_description",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "commands/add-skill.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "commands_add_skill",
+      "target": "commands_add_skill_3_create_skills_name_skill_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "commands/add-skill.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "commands_add_skill",
+      "target": "commands_add_skill_4_bump_the_version_in_lockstep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "commands/add-skill.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "commands_add_skill",
+      "target": "commands_add_skill_5_add_it_to_the_usage_guide",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "commands/add-skill.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "commands_add_skill",
+      "target": "commands_add_skill_6_validate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "commands/add-skill.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "commands_add_skill",
+      "target": "commands_add_skill_7_show_commit_push",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "source_file": "install.sh",
-      "source_location": "L66",
+      "source_location": "L68",
       "weight": 1.0,
       "source": "install",
       "target": "install_bootstrap",
@@ -589,7 +831,7 @@
       "relation": "defines",
       "confidence": "EXTRACTED",
       "source_file": "install.sh",
-      "source_location": "L48",
+      "source_location": "L50",
       "weight": 1.0,
       "source": "install",
       "target": "install_ensure_market",
@@ -599,7 +841,7 @@
       "relation": "defines",
       "confidence": "EXTRACTED",
       "source_file": "install.sh",
-      "source_location": "L57",
+      "source_location": "L59",
       "weight": 1.0,
       "source": "install",
       "target": "install_ensure_plugin",
@@ -609,7 +851,7 @@
       "relation": "defines",
       "confidence": "EXTRACTED",
       "source_file": "install.sh",
-      "source_location": "L45",
+      "source_location": "L47",
       "weight": 1.0,
       "source": "install",
       "target": "install_have_market",
@@ -619,7 +861,7 @@
       "relation": "defines",
       "confidence": "EXTRACTED",
       "source_file": "install.sh",
-      "source_location": "L46",
+      "source_location": "L48",
       "weight": 1.0,
       "source": "install",
       "target": "install_have_plugin",
@@ -639,7 +881,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "install.sh",
-      "source_location": "L103",
+      "source_location": "L116",
       "weight": 1.0,
       "context": "call",
       "source": "install_sh__entry",
@@ -650,7 +892,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "install.sh",
-      "source_location": "L91",
+      "source_location": "L104",
       "weight": 1.0,
       "context": "call",
       "source": "install_sh__entry",
@@ -661,7 +903,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "install.sh",
-      "source_location": "L92",
+      "source_location": "L105",
       "weight": 1.0,
       "context": "call",
       "source": "install_sh__entry",
@@ -672,7 +914,29 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "install.sh",
-      "source_location": "L49",
+      "source_location": "L94",
+      "weight": 1.0,
+      "context": "call",
+      "source": "install_sh__entry",
+      "target": "install_have_market",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "install.sh",
+      "source_location": "L97",
+      "weight": 1.0,
+      "context": "call",
+      "source": "install_sh__entry",
+      "target": "install_have_plugin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "install.sh",
+      "source_location": "L51",
       "weight": 1.0,
       "context": "call",
       "source": "install_ensure_market",
@@ -683,7 +947,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "install.sh",
-      "source_location": "L58",
+      "source_location": "L60",
       "weight": 1.0,
       "context": "call",
       "source": "install_ensure_plugin",
@@ -794,6 +1058,26 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-stack-pill.sh",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "scripts_update_stack_pill",
+      "target": "scripts_update_stack_pill_run_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-stack-pill.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_update_stack_pill",
+      "target": "scripts_update_stack_pill_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/usage-guide.sh",
@@ -806,42 +1090,12 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "readme",
-      "target": "readme_stack_pill",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "readme_stack_pill",
-      "target": "readme_install",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "readme_stack_pill",
-      "target": "readme_what_s_installed",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "instructions/skills-guide.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "instructions_skills_guide",
-      "target": "instructions_skills_guide_stackdrop_toolkit_when_to_reach_for_what",
-      "confidence_score": 1.0
+      "target": "instructions_skills_guide_stackdrop_toolkit_when_to_reach_for_what"
     },
     {
       "relation": "contains",
@@ -849,9 +1103,9 @@
       "source_file": "instructions/skills-guide.md",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "instructions_skills_guide_stackdrop_toolkit_when_to_reach_for_what",
-      "target": "instructions_skills_guide_graphify_codebase_docs_queryable_knowledge_graph",
-      "confidence_score": 1.0
+      "target": "instructions_skills_guide_graphify_codebase_docs_queryable_knowledge_graph"
     },
     {
       "relation": "contains",
@@ -859,9 +1113,9 @@
       "source_file": "instructions/skills-guide.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "instructions_skills_guide_stackdrop_toolkit_when_to_reach_for_what",
-      "target": "instructions_skills_guide_impeccable_frontend_design_ux_impeccable_command",
-      "confidence_score": 1.0
+      "target": "instructions_skills_guide_impeccable_frontend_design_ux_impeccable_command"
     },
     {
       "relation": "contains",
@@ -869,9 +1123,9 @@
       "source_file": "instructions/skills-guide.md",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "instructions_skills_guide_stackdrop_toolkit_when_to_reach_for_what",
-      "target": "instructions_skills_guide_mattpocock_skills_complementary_workflows",
-      "confidence_score": 1.0
+      "target": "instructions_skills_guide_mattpocock_skills_complementary_workflows"
     },
     {
       "relation": "contains",
@@ -879,9 +1133,9 @@
       "source_file": "instructions/skills-guide.md",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "instructions_skills_guide_stackdrop_toolkit_when_to_reach_for_what",
-      "target": "instructions_skills_guide_more_installed_tools",
-      "confidence_score": 1.0
+      "target": "instructions_skills_guide_more_installed_tools"
     },
     {
       "relation": "contains",
@@ -889,9 +1143,9 @@
       "source_file": "instructions/skills-guide.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "instructions_skills_guide_stackdrop_toolkit_when_to_reach_for_what",
-      "target": "instructions_skills_guide_overlaps_which_to_prefer",
-      "confidence_score": 1.0
+      "target": "instructions_skills_guide_overlaps_which_to_prefer"
     },
     {
       "relation": "contains",
@@ -899,11 +1153,11 @@
       "source_file": "instructions/skills-guide.md",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "instructions_skills_guide_stackdrop_toolkit_when_to_reach_for_what",
-      "target": "instructions_skills_guide_superpowers_the_default_development_methodology",
-      "confidence_score": 1.0
+      "target": "instructions_skills_guide_superpowers_the_default_development_methodology"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a163d24033fd5f9e2db12335591cd803d4b375f8"
+  "built_at_commit": "2d048dfa029cb5ccd019759965d0e9ff8db9c09c"
 }

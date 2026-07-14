@@ -1,17 +1,12 @@
 {
   ".claude-plugin/marketplace.json": {
-    "mtime": 1784019835.906867,
-    "ast_hash": "4023c84cf9c2680ebd13602413517052",
+    "mtime": 1784019866.964171,
+    "ast_hash": "94e6586b1e3510106ae78aae8ba97340",
     "semantic_hash": ""
   },
   ".claude-plugin/plugin.json": {
-    "mtime": 1784019835.9073312,
-    "ast_hash": "32b9c188f264800580bf1709231d90ce",
-    "semantic_hash": ""
-  },
-  ".impeccable/hook.cache.json": {
-    "mtime": 1784019835.9082355,
-    "ast_hash": "afff01f34c72a33048cbd5579165d047",
+    "mtime": 1784019866.9644198,
+    "ast_hash": "63bbab419b629eeb38773e3febd12181",
     "semantic_hash": ""
   },
   ".vscode/settings.json": {
@@ -20,48 +15,58 @@
     "semantic_hash": ""
   },
   "hooks/hooks.json": {
-    "mtime": 1784019835.9160302,
-    "ast_hash": "7c12cd26bd9a3b4bf8234937a3b2c3a5",
+    "mtime": 1784019866.9654264,
+    "ast_hash": "94366006bbdb42c8439e21592cb853bb",
     "semantic_hash": ""
   },
   "install.sh": {
-    "mtime": 1784019835.9164598,
-    "ast_hash": "e729390a33e761bbdda291391b7387f5",
+    "mtime": 1784019866.9657183,
+    "ast_hash": "3ae12dd736908cb4d0879e04fb806914",
     "semantic_hash": ""
   },
   "scripts/graphify-project-setup.sh": {
-    "mtime": 1784019835.9168127,
-    "ast_hash": "1a16c883a7711d969266f5691644643e",
+    "mtime": 1784019866.966013,
+    "ast_hash": "dd72a95a1b4d6715a0169fa41c01e3f6",
     "semantic_hash": ""
   },
   "scripts/install-ctx7.sh": {
-    "mtime": 1784019835.9170485,
-    "ast_hash": "65041b3f8d77de59b9009dc7255c9b58",
+    "mtime": 1784019866.9664955,
+    "ast_hash": "12f1dd7817af03893bbe91ff0f5f1b3c",
     "semantic_hash": ""
   },
   "scripts/install-graphify.sh": {
-    "mtime": 1784019835.9174104,
-    "ast_hash": "b1dbd6c4f79fe9f9b933115b73530b1d",
+    "mtime": 1784019866.966835,
+    "ast_hash": "16c1264fd60e6bf67fba1db48c5bd85c",
     "semantic_hash": ""
   },
   "scripts/install-matt-skills.sh": {
-    "mtime": 1784019835.9178658,
-    "ast_hash": "d78a3ead32bb3d25f3a206aed68b6b32",
+    "mtime": 1784019866.9671354,
+    "ast_hash": "f700df2a0957015f89c4b157b756a825",
     "semantic_hash": ""
   },
   "scripts/usage-guide.sh": {
-    "mtime": 1784019835.9180532,
-    "ast_hash": "f7c1ad0e9a984b49f2083721d1c26890",
+    "mtime": 1784019866.9675446,
+    "ast_hash": "9c26bde00047118bc9d972a7971c56c5",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1784019835.9086382,
-    "ast_hash": "c10112aa7c5e98ef516246d01513673b",
+    "mtime": 1784019866.964992,
+    "ast_hash": "36b5b67b41398c6d39cf6eda9d69c660",
     "semantic_hash": ""
   },
   "instructions/skills-guide.md": {
     "mtime": 1782804565.3089297,
     "ast_hash": "1c840310807442a87822cb00d2656271",
+    "semantic_hash": ""
+  },
+  "scripts/update-stack-pill.sh": {
+    "mtime": 1784019866.9673197,
+    "ast_hash": "18ec6d1f35d9134d9470f4ccd40e91c5",
+    "semantic_hash": ""
+  },
+  "commands/add-skill.md": {
+    "mtime": 1784019866.9651585,
+    "ast_hash": "75442d7d594d106cd12a3dcb5b2a847a",
     "semantic_hash": ""
   }
 }

@@ -1,16 +1,16 @@
 # Graph Report - stack-pill  (2026-07-14)
 
 ## Corpus Check
-- 13 files · ~5,322 words
+- 14 files · ~6,601 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 41 nodes · 40 edges · 9 communities (4 shown, 5 thin omitted)
+- 53 nodes · 52 edges · 11 communities (5 shown, 6 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a163d240`
+- Built from commit: `2d048dfa`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -24,17 +24,19 @@
 - [[_COMMUNITY_Community 6|Community 6]]
 - [[_COMMUNITY_Community 7|Community 7]]
 - [[_COMMUNITY_Community 8|Community 8]]
+- [[_COMMUNITY_Community 9|Community 9]]
+- [[_COMMUNITY_Community 10|Community 10]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Stackdrop toolkit — when to reach for what` - 7 edges
-2. `install.sh script` - 4 edges
-3. `owner` - 3 edges
-4. `ensure_market()` - 3 edges
-5. `ensure_plugin()` - 3 edges
-6. `stack-pill` - 3 edges
-7. `metadata` - 2 edges
-8. `have_market()` - 2 edges
-9. `have_plugin()` - 2 edges
+2. `install.sh script` - 6 edges
+3. `stack-pill` - 4 edges
+4. `owner` - 3 edges
+5. `have_market()` - 3 edges
+6. `have_plugin()` - 3 edges
+7. `ensure_market()` - 3 edges
+8. `ensure_plugin()` - 3 edges
+9. `metadata` - 2 edges
 10. `bootstrap()` - 2 edges
 
 ## Surprising Connections (you probably didn't know these)
@@ -43,14 +45,14 @@
 ## Import Cycles
 - None detected.
 
-## Communities (9 total, 5 thin omitted)
+## Communities (11 total, 6 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.50
-Nodes (3): Install, stack-pill, What's installed
+Cohesion: 0.40
+Nodes (4): Adding a team skill, Install, stack-pill, What's installed
 
 ### Community 1 - "Community 1"
-Cohesion: 0.52
+Cohesion: 0.62
 Nodes (6): bootstrap(), ensure_market(), ensure_plugin(), have_market(), have_plugin(), install.sh script
 
 ### Community 2 - "Community 2"
@@ -61,13 +63,17 @@ Nodes (8): metadata, description, name, owner, email, name, plugins, $schema
 Cohesion: 0.25
 Nodes (7): Graphify — codebase/docs → queryable knowledge graph, Impeccable — frontend design & UX (`/impeccable <command>`), mattpocock skills — complementary workflows, More installed tools, Overlaps — which to prefer, Stackdrop toolkit — when to reach for what, Superpowers — the default development methodology
 
+### Community 9 - "Community 9"
+Cohesion: 0.25
+Nodes (7): 1. Confirm you're in the stack-pill checkout, 2. Work out the skill's name and description, 3. Create `skills/<name>/SKILL.md`, 4. Bump the version in lockstep, 5. Add it to the usage guide, 6. Validate, 7. Show, commit, push
+
 ## Knowledge Gaps
-- **16 isolated node(s):** `$schema`, `name`, `name`, `email`, `description` (+11 more)
+- **25 isolated node(s):** `$schema`, `name`, `name`, `email`, `description` (+20 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `$schema`, `name`, `name` to the rest of the system?**
-  _16 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _25 weakly-connected nodes found - possible documentation gaps or missing edges._
