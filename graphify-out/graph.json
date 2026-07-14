@@ -4,44 +4,94 @@
   "graph": {},
   "nodes": [
     {
-      "label": "README.md",
-      "file_type": "document",
-      "source_file": "README.md",
+      "label": "marketplace.json",
+      "file_type": "code",
+      "source_file": ".claude-plugin/marketplace.json",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "readme",
-      "community": 0,
-      "norm_label": "readme.md"
+      "id": "claude_plugin_marketplace",
+      "community": 2,
+      "norm_label": "marketplace.json"
     },
     {
-      "label": "stack-pill",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L1",
+      "label": "$schema",
+      "file_type": "code",
+      "source_file": ".claude-plugin/marketplace.json",
+      "source_location": "L2",
       "_origin": "ast",
-      "id": "readme_stack_pill",
-      "community": 0,
-      "norm_label": "stack-pill"
+      "id": "claude_plugin_marketplace_schema",
+      "community": 2,
+      "norm_label": "$schema"
     },
     {
-      "label": "What's installed",
-      "file_type": "document",
-      "source_file": "README.md",
+      "label": "name",
+      "file_type": "code",
+      "source_file": ".claude-plugin/marketplace.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "claude_plugin_marketplace_name",
+      "community": 2,
+      "norm_label": "name"
+    },
+    {
+      "label": "owner",
+      "file_type": "code",
+      "source_file": ".claude-plugin/marketplace.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "claude_plugin_marketplace_owner",
+      "community": 2,
+      "norm_label": "owner"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": ".claude-plugin/marketplace.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "claude_plugin_marketplace_owner_name",
+      "community": 2,
+      "norm_label": "name"
+    },
+    {
+      "label": "email",
+      "file_type": "code",
+      "source_file": ".claude-plugin/marketplace.json",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "readme_what_s_installed",
-      "community": 0,
-      "norm_label": "what's installed"
+      "id": "claude_plugin_marketplace_owner_email",
+      "community": 2,
+      "norm_label": "email"
     },
     {
-      "label": "Install",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L21",
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": ".claude-plugin/marketplace.json",
+      "source_location": "L8",
       "_origin": "ast",
-      "id": "readme_install",
-      "community": 0,
-      "norm_label": "install"
+      "id": "claude_plugin_marketplace_metadata",
+      "community": 2,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "description",
+      "file_type": "code",
+      "source_file": ".claude-plugin/marketplace.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "claude_plugin_marketplace_metadata_description",
+      "community": 2,
+      "norm_label": "description"
+    },
+    {
+      "label": "plugins",
+      "file_type": "code",
+      "source_file": ".claude-plugin/marketplace.json",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "claude_plugin_marketplace_plugins",
+      "community": 2,
+      "norm_label": "plugins"
     },
     {
       "label": "install.sh",
@@ -96,7 +146,7 @@
       },
       "_origin": "ast",
       "id": "install_have_plugin",
-      "community": 2,
+      "community": 1,
       "norm_label": "have_plugin()"
     },
     {
@@ -124,7 +174,7 @@
       },
       "_origin": "ast",
       "id": "install_ensure_plugin",
-      "community": 2,
+      "community": 1,
       "norm_label": "ensure_plugin()"
     },
     {
@@ -140,37 +190,389 @@
       "id": "install_bootstrap",
       "community": 1,
       "norm_label": "bootstrap()"
+    },
+    {
+      "label": "graphify-project-setup.sh",
+      "file_type": "code",
+      "source_file": "scripts/graphify-project-setup.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "scripts_graphify_project_setup",
+      "community": 7,
+      "norm_label": "graphify-project-setup.sh"
+    },
+    {
+      "label": "graphify-project-setup.sh script",
+      "file_type": "code",
+      "source_file": "scripts/graphify-project-setup.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "scripts_graphify_project_setup_sh__entry",
+      "community": 7,
+      "norm_label": "graphify-project-setup.sh script"
+    },
+    {
+      "label": "install-ctx7.sh",
+      "file_type": "code",
+      "source_file": "scripts/install-ctx7.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "scripts_install_ctx7",
+      "community": 4,
+      "norm_label": "install-ctx7.sh"
+    },
+    {
+      "label": "install-ctx7.sh script",
+      "file_type": "code",
+      "source_file": "scripts/install-ctx7.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "scripts_install_ctx7_sh__entry",
+      "community": 4,
+      "norm_label": "install-ctx7.sh script"
+    },
+    {
+      "label": "run_install()",
+      "file_type": "code",
+      "source_file": "scripts/install-ctx7.sh",
+      "source_location": "L92",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast",
+      "id": "scripts_install_ctx7_run_install",
+      "community": 4,
+      "norm_label": "run_install()"
+    },
+    {
+      "label": "install-graphify.sh",
+      "file_type": "code",
+      "source_file": "scripts/install-graphify.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "scripts_install_graphify",
+      "community": 5,
+      "norm_label": "install-graphify.sh"
+    },
+    {
+      "label": "install-graphify.sh script",
+      "file_type": "code",
+      "source_file": "scripts/install-graphify.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "scripts_install_graphify_sh__entry",
+      "community": 5,
+      "norm_label": "install-graphify.sh script"
+    },
+    {
+      "label": "run_install()",
+      "file_type": "code",
+      "source_file": "scripts/install-graphify.sh",
+      "source_location": "L84",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast",
+      "id": "scripts_install_graphify_run_install",
+      "community": 5,
+      "norm_label": "run_install()"
+    },
+    {
+      "label": "install-matt-skills.sh",
+      "file_type": "code",
+      "source_file": "scripts/install-matt-skills.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "scripts_install_matt_skills",
+      "community": 6,
+      "norm_label": "install-matt-skills.sh"
+    },
+    {
+      "label": "install-matt-skills.sh script",
+      "file_type": "code",
+      "source_file": "scripts/install-matt-skills.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "scripts_install_matt_skills_sh__entry",
+      "community": 6,
+      "norm_label": "install-matt-skills.sh script"
+    },
+    {
+      "label": "run_install()",
+      "file_type": "code",
+      "source_file": "scripts/install-matt-skills.sh",
+      "source_location": "L99",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast",
+      "id": "scripts_install_matt_skills_run_install",
+      "community": 6,
+      "norm_label": "run_install()"
+    },
+    {
+      "label": "usage-guide.sh",
+      "file_type": "code",
+      "source_file": "scripts/usage-guide.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "scripts_usage_guide",
+      "community": 8,
+      "norm_label": "usage-guide.sh"
+    },
+    {
+      "label": "usage-guide.sh script",
+      "file_type": "code",
+      "source_file": "scripts/usage-guide.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "scripts_usage_guide_sh__entry",
+      "community": 8,
+      "norm_label": "usage-guide.sh script"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme",
+      "community": 0,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "stack-pill",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme_stack_pill",
+      "community": 0,
+      "norm_label": "stack-pill"
+    },
+    {
+      "label": "What's installed",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "readme_what_s_installed",
+      "community": 0,
+      "norm_label": "what's installed"
+    },
+    {
+      "label": "Install",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "readme_install",
+      "community": 0,
+      "norm_label": "install"
+    },
+    {
+      "label": "skills-guide.md",
+      "file_type": "document",
+      "source_file": "instructions/skills-guide.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "instructions_skills_guide",
+      "community": 3,
+      "norm_label": "skills-guide.md"
+    },
+    {
+      "label": "Stackdrop toolkit \u2014 when to reach for what",
+      "file_type": "document",
+      "source_file": "instructions/skills-guide.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "instructions_skills_guide_stackdrop_toolkit_when_to_reach_for_what",
+      "community": 3,
+      "norm_label": "stackdrop toolkit \u2014 when to reach for what"
+    },
+    {
+      "label": "Superpowers \u2014 the default development methodology",
+      "file_type": "document",
+      "source_file": "instructions/skills-guide.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "instructions_skills_guide_superpowers_the_default_development_methodology",
+      "community": 3,
+      "norm_label": "superpowers \u2014 the default development methodology"
+    },
+    {
+      "label": "Impeccable \u2014 frontend design & UX (`/impeccable <command>`)",
+      "file_type": "document",
+      "source_file": "instructions/skills-guide.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "instructions_skills_guide_impeccable_frontend_design_ux_impeccable_command",
+      "community": 3,
+      "norm_label": "impeccable \u2014 frontend design & ux (`/impeccable <command>`)"
+    },
+    {
+      "label": "Graphify \u2014 codebase/docs \u2192 queryable knowledge graph",
+      "file_type": "document",
+      "source_file": "instructions/skills-guide.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "instructions_skills_guide_graphify_codebase_docs_queryable_knowledge_graph",
+      "community": 3,
+      "norm_label": "graphify \u2014 codebase/docs \u2192 queryable knowledge graph"
+    },
+    {
+      "label": "mattpocock skills \u2014 complementary workflows",
+      "file_type": "document",
+      "source_file": "instructions/skills-guide.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "instructions_skills_guide_mattpocock_skills_complementary_workflows",
+      "community": 3,
+      "norm_label": "mattpocock skills \u2014 complementary workflows"
+    },
+    {
+      "label": "More installed tools",
+      "file_type": "document",
+      "source_file": "instructions/skills-guide.md",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "instructions_skills_guide_more_installed_tools",
+      "community": 3,
+      "norm_label": "more installed tools"
+    },
+    {
+      "label": "Overlaps \u2014 which to prefer",
+      "file_type": "document",
+      "source_file": "instructions/skills-guide.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "instructions_skills_guide_overlaps_which_to_prefer",
+      "community": 3,
+      "norm_label": "overlaps \u2014 which to prefer"
     }
   ],
   "links": [
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L1",
+      "source_file": ".claude-plugin/marketplace.json",
+      "source_location": "L8",
       "weight": 1.0,
-      "source": "readme",
-      "target": "readme_stack_pill",
+      "source": "claude_plugin_marketplace",
+      "target": "claude_plugin_marketplace_metadata",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L21",
+      "source_file": ".claude-plugin/marketplace.json",
+      "source_location": "L3",
       "weight": 1.0,
-      "source": "readme_stack_pill",
-      "target": "readme_install",
+      "source": "claude_plugin_marketplace",
+      "target": "claude_plugin_marketplace_name",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "README.md",
+      "source_file": ".claude-plugin/marketplace.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "claude_plugin_marketplace",
+      "target": "claude_plugin_marketplace_owner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude-plugin/marketplace.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "claude_plugin_marketplace",
+      "target": "claude_plugin_marketplace_plugins",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude-plugin/marketplace.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "claude_plugin_marketplace",
+      "target": "claude_plugin_marketplace_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude-plugin/marketplace.json",
       "source_location": "L6",
       "weight": 1.0,
-      "source": "readme_stack_pill",
-      "target": "readme_what_s_installed",
+      "source": "claude_plugin_marketplace_owner",
+      "target": "claude_plugin_marketplace_owner_email",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude-plugin/marketplace.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "claude_plugin_marketplace_owner",
+      "target": "claude_plugin_marketplace_owner_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude-plugin/marketplace.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "claude_plugin_marketplace_metadata",
+      "target": "claude_plugin_marketplace_metadata_description",
       "confidence_score": 1.0
     },
     {
@@ -287,8 +689,221 @@
       "source": "install_ensure_plugin",
       "target": "install_have_plugin",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/graphify-project-setup.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_graphify_project_setup",
+      "target": "scripts_graphify_project_setup_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/install-ctx7.sh",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "scripts_install_ctx7",
+      "target": "scripts_install_ctx7_run_install",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/install-ctx7.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_install_ctx7",
+      "target": "scripts_install_ctx7_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/install-ctx7.sh",
+      "source_location": "L118",
+      "weight": 1.0,
+      "context": "call",
+      "source": "scripts_install_ctx7_sh__entry",
+      "target": "scripts_install_ctx7_run_install",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/install-graphify.sh",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "scripts_install_graphify",
+      "target": "scripts_install_graphify_run_install",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/install-graphify.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_install_graphify",
+      "target": "scripts_install_graphify_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/install-graphify.sh",
+      "source_location": "L123",
+      "weight": 1.0,
+      "context": "call",
+      "source": "scripts_install_graphify_sh__entry",
+      "target": "scripts_install_graphify_run_install",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/install-matt-skills.sh",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "scripts_install_matt_skills",
+      "target": "scripts_install_matt_skills_run_install",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/install-matt-skills.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_install_matt_skills",
+      "target": "scripts_install_matt_skills_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/install-matt-skills.sh",
+      "source_location": "L131",
+      "weight": 1.0,
+      "context": "call",
+      "source": "scripts_install_matt_skills_sh__entry",
+      "target": "scripts_install_matt_skills_run_install",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/usage-guide.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_usage_guide",
+      "target": "scripts_usage_guide_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_stack_pill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "readme_stack_pill",
+      "target": "readme_install",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "readme_stack_pill",
+      "target": "readme_what_s_installed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "instructions/skills-guide.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "instructions_skills_guide",
+      "target": "instructions_skills_guide_stackdrop_toolkit_when_to_reach_for_what",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "instructions/skills-guide.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "instructions_skills_guide_stackdrop_toolkit_when_to_reach_for_what",
+      "target": "instructions_skills_guide_graphify_codebase_docs_queryable_knowledge_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "instructions/skills-guide.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "instructions_skills_guide_stackdrop_toolkit_when_to_reach_for_what",
+      "target": "instructions_skills_guide_impeccable_frontend_design_ux_impeccable_command",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "instructions/skills-guide.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "instructions_skills_guide_stackdrop_toolkit_when_to_reach_for_what",
+      "target": "instructions_skills_guide_mattpocock_skills_complementary_workflows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "instructions/skills-guide.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "instructions_skills_guide_stackdrop_toolkit_when_to_reach_for_what",
+      "target": "instructions_skills_guide_more_installed_tools",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "instructions/skills-guide.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "instructions_skills_guide_stackdrop_toolkit_when_to_reach_for_what",
+      "target": "instructions_skills_guide_overlaps_which_to_prefer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "instructions/skills-guide.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "instructions_skills_guide_stackdrop_toolkit_when_to_reach_for_what",
+      "target": "instructions_skills_guide_superpowers_the_default_development_methodology",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "514bf224f9fd518bcc7236d025e4abd21ee801c0"
+  "built_at_commit": "a163d24033fd5f9e2db12335591cd803d4b375f8"
 }

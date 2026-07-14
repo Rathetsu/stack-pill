@@ -1,16 +1,16 @@
 {
   ".claude-plugin/marketplace.json": {
-    "mtime": 1782804595.064539,
+    "mtime": 1784019835.906867,
     "ast_hash": "4023c84cf9c2680ebd13602413517052",
     "semantic_hash": ""
   },
   ".claude-plugin/plugin.json": {
-    "mtime": 1783329760.5318582,
+    "mtime": 1784019835.9073312,
     "ast_hash": "32b9c188f264800580bf1709231d90ce",
     "semantic_hash": ""
   },
   ".impeccable/hook.cache.json": {
-    "mtime": 1783329781.7859023,
+    "mtime": 1784019835.9082355,
     "ast_hash": "afff01f34c72a33048cbd5579165d047",
     "semantic_hash": ""
   },
@@ -20,42 +20,42 @@
     "semantic_hash": ""
   },
   "hooks/hooks.json": {
-    "mtime": 1782804530.3903778,
+    "mtime": 1784019835.9160302,
     "ast_hash": "7c12cd26bd9a3b4bf8234937a3b2c3a5",
     "semantic_hash": ""
   },
   "install.sh": {
-    "mtime": 1783329781.7093532,
+    "mtime": 1784019835.9164598,
     "ast_hash": "e729390a33e761bbdda291391b7387f5",
     "semantic_hash": ""
   },
   "scripts/graphify-project-setup.sh": {
-    "mtime": 1782726178.6875875,
+    "mtime": 1784019835.9168127,
     "ast_hash": "1a16c883a7711d969266f5691644643e",
     "semantic_hash": ""
   },
   "scripts/install-ctx7.sh": {
-    "mtime": 1782804464.1936297,
+    "mtime": 1784019835.9170485,
     "ast_hash": "65041b3f8d77de59b9009dc7255c9b58",
     "semantic_hash": ""
   },
   "scripts/install-graphify.sh": {
-    "mtime": 1782726370.8814452,
+    "mtime": 1784019835.9174104,
     "ast_hash": "b1dbd6c4f79fe9f9b933115b73530b1d",
     "semantic_hash": ""
   },
   "scripts/install-matt-skills.sh": {
-    "mtime": 1782801819.3465643,
+    "mtime": 1784019835.9178658,
     "ast_hash": "d78a3ead32bb3d25f3a206aed68b6b32",
     "semantic_hash": ""
   },
   "scripts/usage-guide.sh": {
-    "mtime": 1782801881.47486,
+    "mtime": 1784019835.9180532,
     "ast_hash": "f7c1ad0e9a984b49f2083721d1c26890",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1783248057.7808459,
+    "mtime": 1784019835.9086382,
     "ast_hash": "c10112aa7c5e98ef516246d01513673b",
     "semantic_hash": ""
   },
